@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shaik Afsheen — AI/ML Engineer &amp; Data Analyst</title>
+<meta name="description" content="Portfolio of Shaik Afsheen — AI/ML Engineer and Data Analyst. Machine learning projects, research, and skills." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__mark">AFSHEEN</a>
+    <nav class="nav__links">
+      <a href="#projects">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__status">
+      <span class="dot-pulse"></span>
+      <span>Available for opportunities</span>
+    </div>
+    <button class="nav__burger" id="nav-burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" id="nav-mobile">
+    <a href="#projects">Work</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#journey">Experience</a>
+    <a href="#contact">Contact</a>
+    <div class="nav__status">
+      <span class="dot-pulse"></span>
+      <span>Available for opportunities</span>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__grid">
+      <div>
+        <p class="eyebrow" data-reveal id="hero-tag"></p>
+        <h1 class="hero__title" data-reveal id="hero-heading"></h1>
+        <p class="hero__sub" data-reveal id="hero-sub"></p>
+        <div class="hero__actions" data-reveal>
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--ghost">Let's Connect</a>
+        </div>
+        <a href="#" id="hero-github" target="_blank" rel="noopener" class="hero__github" data-reveal>GitHub ↗</a>
+      </div>
+      <div class="hero__pipeline" data-reveal aria-hidden="true">
+        <div class="pipeline-glow"></div>
+        <div class="pipeline" id="pipeline"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <h2 class="section-title" data-reveal>A little about me.</h2>
+    <div class="about__grid">
+      <p class="about__body" id="about-body" data-reveal></p>
+      <div class="about__card" data-reveal>
+        <p class="card-label">Currently focused on</p>
+        <div id="about-focus"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <h2 class="section-title" data-reveal>Skill set.</h2>
+    <div class="skills__grid" id="skills-grid"></div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <h2 class="section-title section-title--tight" data-reveal>Things I've built.</h2>
+    <p class="section-sub" data-reveal>A selection of projects where AI, data, and research come together to solve real problems.</p>
+    <div class="projects__grid" id="projects-grid"></div>
+  </section>
+
+  <!-- ===== HIGHLIGHTS ===== -->
+  <section class="section highlights">
+    <div class="highlights__grid" id="highlights-grid"></div>
+  </section>
+
+  <!-- ===== JOURNEY ===== -->
+  <section class="section" id="journey">
+    <h2 class="section-title" data-reveal>My journey so far.</h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <!-- ===== RESUME CTA ===== -->
+  <section class="section">
+    <div class="resume-cta" data-reveal>
+      <div>
+        <h3>Want the full picture?</h3>
+        <p>Take a closer look at my experience, skills, projects, and academic journey.</p>
+      </div>
+      <div class="resume-cta__actions">
+        <a href="assets/Shaik_Afsheen_Resume.pdf" target="_blank" rel="noopener" class="btn btn--primary">View Resume ↗</a>
+        <a href="assets/Shaik_Afsheen_Resume.pdf" download class="btn btn--ghost">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="contact__grid">
+      <div>
+        <h2 class="section-title" data-reveal>Let's build something useful.</h2>
+        <p class="contact__lead" data-reveal>I'm always interested in interesting problems, ambitious projects, and opportunities to learn and build.</p>
+        <div class="contact__links" data-reveal>
+          <a href="#" id="contact-email">✉ <span id="contact-email-text"></span></a>
+          <a href="#" id="contact-linkedin" target="_blank" rel="noopener">in <span id="contact-linkedin-text"></span></a>
+          <a href="#" id="contact-github" target="_blank" rel="noopener">⌥ <span id="contact-github-text"></span></a>
+        </div>
+      </div>
+      <form class="contact__form" id="contact-form" data-reveal>
+        <input type="text" id="cf-name" placeholder="Name" required />
+        <input type="email" id="cf-email" placeholder="Email" required />
+        <textarea id="cf-message" rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="btn btn--primary contact__submit">Send Message</button>
+        <p class="contact__note">Opens your email client with this message pre-filled.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__mark">SHAIK AFSHEEN</div>
+        <div class="footer__role">AI/ML Engineer • Data Analyst</div>
+      </div>
+      <div class="footer__socials">
+        <a href="#" id="footer-github" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" id="footer-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" id="footer-email">Email</a>
+      </div>
+      <div class="footer__copy" id="footer-copy"></div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- ===== PROJECT MODAL ===== -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal-content" role="dialog" aria-modal="true"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
