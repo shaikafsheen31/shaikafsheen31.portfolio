@@ -47,22 +47,23 @@ const PROJECTS = [
     subtitle: "Explainable Loan Approval Prediction & Risk Assessment",
     highlight: "ML + Explainable AI",
     description: "An AI-based loan approval system that assesses applicant financial data \u2014 income, CIBIL score, employment status, assets, and loan amount \u2014 to automate eligibility decisions, with every prediction explained rather than left as a black box.",
-    tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "XGBoost", "Random Forest", "Logistic Regression", "SHAP", "LIME", "Streamlit"],
+    tech:  ["Python", "Pandas", "NumPy", "Scikit-learn", "Random Forest", "Gradient Boosting", "Logistic Regression", "Streamlit"],
     features: [
-      "Automated eligibility assessment from applicant financial & demographic data",
-      "Preprocessing, feature selection, model training, and evaluation across multiple classifiers",
-      "SHAP and LIME integration for global and instance-level explanations",
-      "Interactive web app surfacing approval status, risk level, and recommendations"
+      "Automated loan approval prediction from applicant financial and demographic data",
+      "Preprocessing, feature engineering, model training, and evaluation across multiple classifiers",
+      "Weighted ensemble combining Random Forest, Gradient Boosting, and Logistic Regression",
+      "Feature importance and risk-factor analysis to make predictions more interpretable",
+      "Interactive web app with approval probability, risk assessment, recommendations, and what-if analysis"
     ],
     detail: {
-      problem: "Loan approval decisions are often opaque \u2014 applicants and even loan officers can't easily see why a model approved or rejected a case.",
-      solution: "Built a classification pipeline that predicts approval outcomes and pairs every prediction with an explanation of which factors drove it.",
-      how: "Applicant data is preprocessed and fed through Logistic Regression, Random Forest, and XGBoost classifiers. SHAP values explain global feature influence; LIME explains individual predictions. Results are served through an interactive web app.",
-      challenges: "Balancing model accuracy with interpretability \u2014 more complex models like XGBoost perform well but need extra work to explain clearly.",
-      learned: "How to make ML systems trustworthy, not just accurate \u2014 explainability is a design constraint, not an afterthought."
+      problem: "Loan approval decisions depend on multiple financial and applicant-related factors, but automated predictions can be difficult to interpret.",
+      solution: "Built a machine learning-based loan approval system that predicts approval outcomes and provides interpretable insights into the factors influencing the prediction.",
+      how: "Applicant data is preprocessed and used to train Random Forest, Gradient Boosting, and Logistic Regression models. Their predictions are combined using a weighted ensemble, while Random Forest feature importance and risk-factor analysis provide additional insights. The results are served through an interactive Streamlit web application.",
+      challenges: "Balancing prediction performance with interpretability while designing an interactive system that allows users to explore how financial factors can affect the predicted outcome.",
+      learned: "How to build an end-to-end machine learning application, combine multiple classification models into an ensemble, evaluate models using cross-validation, and make predictions more interpretable for users."
     },
-    github: GITHUB_URL,
-    live: null
+        github: "https://github.com/shaikafsheen31/Loansense-AI-",
+        live: "https://loansense-ai-afsheenproject.streamlit.app/"
   },
   {
     number: "02",
